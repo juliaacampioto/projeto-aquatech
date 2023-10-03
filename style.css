@@ -4,22 +4,64 @@ body{
 
 .header {
     background-color: black;
+    /* width usado c porcentagem e heigth usado com px */
+    width: 100%;
+    height: 100px;
+    /* borda solida, normal */
+    border-bottom: 4px solid cornflowerblue; 
 }
 
-h1{
+.header .container h1{
     color: #32b9cd;
     margin: 0;
 }
 
-.container {
+.header .container {
     display: flex;
+    /* itens na horizontal */
     justify-content: space-between;
+    /* itens na vertical */
+    align-items: center;
     width: 80%;
-    border: 1px solid pink;
     margin: 0 10% 0 10%;
+    height: 100px;
 }
 
-.navbar {
-    color: rgb(255, 255, 0);
+.header .container .navbar {
+    list-style: none;
 }
 
+.header .container .navbar li{
+    /* colocar a lista em linhas */
+    display: inline;
+    /* primeiro valor = em cima e embaixo, segundo valor = do lado e do outro */
+    padding: 0 15px;
+}
+
+.header .container .navbar li a{
+    color: #ff7700;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(imagens/bg-jelly-fish-para_outras_pags.png);
+}
+
+.banner .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    /* flexivel = disponivel p mudancas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .container p {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    width: 10%;
+}
